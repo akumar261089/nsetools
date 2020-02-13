@@ -24,7 +24,7 @@
 """
 import six
 import re
-import sys
+
 
 def byte_adaptor(fbuffer):
     """ provides py3 compatibility by converting byte based
@@ -59,3 +59,4 @@ def js_adaptor(buffer):
     buffer = re.sub('none', 'None', buffer)
     buffer = re.sub('NaN', '"NaN"', buffer)
     return buffer
+
